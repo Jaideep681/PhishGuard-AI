@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Scanner | PhishGuard AI</title>
+    <link rel="icon" href="images/PhishGuard AI logo.png" type="image/png">
+    <link rel="stylesheet" href="css/UrlScan.css">
+    <script type="module" src="js/UrlScan.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>PhishGuard AI</h1>
+        <nav>
+            <a href="Dashboard.html">Dashboard</a>
+            <a href="QrScan.html">QR Scanner</a>
+            <a href="DnsAnalysis.html">DNS Analysis</a>
+            <a href="ScanHistory.html">Scan History</a>
+            <a href="HomePage.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="heading">
+            <h2>URL Phishing Scanner</h2>
+            <p>
+                Analyze suspicious website URLs using machine learning
+                and identify potential phishing threats.
+            </p>
+            <p><strong>Detect. Analyze. Stay Secure.</strong></p>
+        </section>
+
+        <section class="scanner-box">
+            <h3>Scan a Website URL</h3>
+
+            <p>
+                Enter the complete website URL below.
+                PhishGuard AI will analyze it using its trained
+                phishing detection model.
+            </p>
+
+            <form id="scanForm">
+                <label for="urlInput">Website URL</label>
+                <input type="url" id="urlInput" name="url" placeholder="https://example.com" required maxlength="2048">
+                <center><button type="submit" id="scanButton">Scan URL</button></center>
+            </form>
+
+            <div id="status" role="status" aria-live="polite"></div>
+
+            <section class="result-box" id="resultBox">
+                <h3>Scan Results</h3>
+
+                <div class="result-row">
+                    <span>Scanned URL</span>
+                    <span id="scannedUrl">-</span>
+                </div>
+
+                <div class="result-row">
+                    <span>Prediction</span>
+                    <span id="prediction">-</span>
+                </div>
+
+                <div class="result-row">
+                    <span>Confidence Score</span>
+                    <span id="confidence">-</span>
+                </div>
+
+                <div class="result-row">
+                    <span>Scan ID</span>
+                    <span id="scanId">-</span>
+                </div>
+
+                <div class="result-row">
+                    <span>Extracted Features</span>
+                    <span id="featureCount">-</span>
+                </div>
+
+                <div class="result-row">
+                    <span>Model Input Features</span>
+                    <span id="modelFeatures">-</span>
+                </div>
+
+                <div class="result-row">
+                    <span>Scan Status</span>
+                    <span id="scanStatus">-</span>
+                </div>
+
+                <div class="probability-section">
+                    <h4>Class Probabilities</h4>
+
+                    <div class="probability">
+                        <div class="probability-label">
+                            <span>Class 0</span>
+                            <span id="class0Value">-</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-fill" id="class0Bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="probability">
+                        <div class="probability-label">
+                            <span>Class 1</span>
+                            <span id="class1Value">-</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-fill" id="class1Bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="notice">
+                    Machine learning predictions are not guarantees.
+                    Avoid entering passwords, payment information,
+                    or other sensitive data on suspicious websites.
+                </p>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>PhishGuard AI — Detect. Analyze. Stay Secure.</p>
+        <p>© 2026 PhishGuard AI. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

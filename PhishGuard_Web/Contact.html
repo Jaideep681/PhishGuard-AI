@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | PhishGuard AI</title>
+    <link rel="website icon" href="images/PhishGuard AI logo.png" type="image/png">
+    <link rel="stylesheet" href="css/Contact.css">
+    <script type="module" src="js/Contact.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="h1">PhishGuard AI</div>
+        <nav>
+            <a href="Dashboard.html">Dashboard</a>
+            <a href="UrlScan.html">URL Scan</a>
+            <a href="QrScan.html">QR Scan</a>
+            <a href="HomePage.html">Home</a>
+            <a href="About.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="heading">
+            <center>
+                <h1>Contact Us</h1>
+                <h2>We're Here to Help!</h2>
+                <big>Questions, feedback, or suggestions? We'd love to hear from you.</big>
+                <br><br>
+                <h2>Detect. Analyze. Stay Secure.</h2>
+            </center>
+        </div>
+        <br>
+
+        <section id="intro">
+            <center>
+                <h2>Get in Touch</h2>
+            </center>
+            <p style="font-size: 25px;">
+                Have a question, suggestion, or feedback about PhishGuard AI? We would love to hear from you!
+                Whether you have encountered an issue while scanning a URL, want to suggest an improvement,
+                or simply wish to know more about the project, feel free to contact us.
+            </p>
+        </section>
+        <br><br>
+
+        <section id="contact-options">
+            <center>
+                <h2>How Can We Help You?</h2>
+            </center>
+
+            <p style="font-size: 22px;"><b>1. General Enquiries</b></p>
+            <p>For questions about PhishGuard AI, its features, or how the platform works, get in touch with us.</p>
+
+            <p style="font-size: 22px;"><b>2. Technical Support</b></p>
+            <p>Facing an issue with URL scanning, QR code detection, DNS analysis, or your account? Let us know so that
+                we can look into it.</p>
+
+            <p style="font-size: 22px;"><b>3. Feedback and Suggestions</b></p>
+            <p>Your feedback helps us improve. Share your ideas, suggestions, and experience while using PhishGuard AI.
+            </p>
+
+            <p style="font-size: 22px;"><b>4. Report a Security Concern</b></p>
+            <p>If you notice unexpected behaviour, a suspicious result, or a potential security issue on our platform,
+                please inform us.</p>
+        </section>
+        <br><br>
+
+        <section id="contact-form">
+            <h2>Send Us a Message</h2>
+            <p style="font-size: 20px;">
+                Have something to share? Fill out the form below and provide a few details.
+                We will review your message.
+            </p>
+
+            <!-- Front-end form only. Connect it to a backend before sending or storing messages. -->
+            <form action="#" method="post" id="contactForm">
+                <div style="display:none;" aria-hidden="true">
+                    <label for="website">Leave this field empty</label>
+                    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                </div>
+                <label for="fullName">Full Name</label><br>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                <br><br>
+
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                <br><br>
+
+                <label for="subject">Subject</label><br>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="General Enquiry">General Enquiry</option>
+                    <option value="Technical Support">Technical Support</option>
+                    <option value="Feedback and Suggestions">Feedback and Suggestions</option>
+                    <option value="Security Concern">Security Concern</option>
+                    <option value="Other">Other</option>
+                </select>
+                <br><br>
+
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="7" placeholder="Write your message here..."
+                    required></textarea>
+                <br>
+
+                &emsp;&emsp;<button type="submit" id="submitBtn">Submit Query</button>
+            </form>
+            <p id="formStatus" role="status" aria-live="polite"></p>
+        </section>
+        <br><br>
+
+        <section id="connect">
+            <center>
+                <h2>Connect With Us</h2>
+            </center>
+            <p style="font-size: 22px;">Stay connected with PhishGuard AI for project updates and further information.
+            </p>
+            <p style="font-size: 20px;"><b>Project:</b> PhishGuard AI</p>
+            <p style="font-size: 20px;"><b>Tagline:</b> Detect. Analyze. Stay Secure.</p>
+        </section>
+
+        <section id="thanks">
+            <center>
+                <h2>Thank You!</h2>
+                <p>
+                    Thank you for taking the time to connect with PhishGuard AI.
+                    Your questions, feedback, and suggestions are valuable to the continued improvement of this project.
+                </p>
+                <h3>Together, Let's Make Browsing Safer!</h3>
+            </center>
+        </section>
+    </main>
+
+    <footer>
+        <p>PhishGuard AI — Detect. Analyze. Stay Secure.</p>
+        <p>© 2026 PhishGuard AI. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner | PhishGuard AI</title>
+    <link rel="icon" href="images/PhishGuard AI logo.png" type="image/png">
+    <link rel="stylesheet" href="css/QrScan.css">
+    <script type="module" src="js/QrScan.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>PhishGuard AI</h1>
+        <nav>
+            <a href="Dashboard.html">Dashboard</a>
+            <a href="UrlScan.html">URL Scanner</a>
+            <a href="DnsAnalysis.html">DNS Analysis</a>
+            <a href="ScanHistory.html">Scan History</a>
+            <a href="HomePage.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="heading">
+            <h2>QR Code Scanner</h2>
+
+            <p>
+                Upload a QR code image to decode its hidden content
+                and identify whether it contains a website URL or plain text.
+            </p>
+
+            <p><strong>Detect. Analyze. Stay Secure.</strong></p>
+        </section>
+
+        <section class="scanner-box">
+
+            <h3>Upload QR Code Image</h3>
+
+            <p>
+                Select an image containing a QR code.
+                PhishGuard AI will decode the content without automatically
+                opening the decoded URL.
+            </p>
+
+            <form id="qrForm">
+
+                <div class="upload-area">
+                    <p>Select your QR code image</p>
+
+                    <input type="file" id="qrImage" name="file"
+                        accept=".png,.jpg,.jpeg,.bmp,.webp,image/png,image/jpeg,image/bmp,image/webp" required>
+
+                    <p style="font-size: 13px; margin-top: 15px;">
+                        Supported formats: PNG, JPG, JPEG, BMP, WEBP
+                        <br>
+                        Maximum file size: 10 MB
+                    </p>
+                </div>
+
+                <button type="submit" id="scanButton" class="scan-button">
+                    Scan QR Code
+                </button>
+
+            </form>
+
+            <div id="status" role="status" aria-live="polite"></div>
+
+            <section class="preview-box" id="previewBox">
+                <h3>Uploaded Image Preview</h3>
+                <img id="imagePreview" alt="Uploaded QR code preview">
+            </section>
+
+            <section class="result-box" id="resultBox">
+
+                <h3>QR Code Analysis Result</h3>
+
+                <div class="result-row">
+                    <span>Scan Status</span>
+                    <span id="scanStatus">-</span>
+                </div>
+
+                <div class="result-row">
+                    <span>QR Code Detected</span>
+                    <span id="qrDetected">-</span>
+                </div>
+
+                <div class="result-row">
+                    <span>Content Type</span>
+                    <span id="contentType">-</span>
+                </div>
+
+                <h4 style="margin-top: 22px;">Decoded Content</h4>
+
+                <div class="decoded-content" id="decodedContent"></div>
+
+                <a id="decodedLink" class="open-link" target="_blank" rel="noopener noreferrer" hidden>
+                    View URL (only if you trust it)
+                </a>
+
+                <p class="warning">
+                    Security Warning: QR codes may contain malicious links.
+                    Always verify the destination before opening it.
+                    PhishGuard AI does not automatically visit decoded URLs.
+                </p>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>PhishGuard AI — Detect. Analyze. Stay Secure.</p>
+        <p>© 2026 PhishGuard AI. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

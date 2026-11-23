@@ -1,0 +1,30 @@
+
+# Firebase Admin SDK private credentials
+Flask_App/phishguard-ai-2ba75-firebase-adminsdk-fbsvc-bc54c13171.json
+
+# Environment variables and secrets
+.env
+.env.*
+Data/Credentials.env
+
+# Allow example configuration
+!.env.example
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+Flask_App/venv/
+.venv/
+Flask_App/venv_linux/
+.venv_linux/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Large original training dataset
+phiusiil+phishing+url+dataset/

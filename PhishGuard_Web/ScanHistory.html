@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan History | PhishGuard AI</title>
+    <link rel="website icon" href="images/PhishGuard AI logo.png" type="image/png">
+    <link rel="stylesheet" href="css/ScanHistory.css">
+    <script type="module" src="js/ScanHistory.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>PhishGuard AI</h1>
+        <nav>
+            <a href="Dashboard.html">Dashboard</a>
+            <a href="UrlScan.html">URL Scan</a>
+            <a href="QrScan.html">QR Scan</a>
+            <a href="HomePage.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="page-heading">
+            <h2>Scan History</h2>
+            <p>View and manage your previous URL scanning activities.</p>
+        </div>
+
+        <section class="history-container">
+            <h3>Your Previous Scans</h3>
+            <div id="status" role="status" aria-live="polite">
+                Loading scan history...
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Scan ID</th>
+                        <th>Scanned URL</th>
+                        <th>Scan Result</th>
+                        <th>Confidence</th>
+                        <th>Scan Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="historyTableBody">
+                </tbody>
+            </table>
+
+            <div class="pagination">
+                <button id="previousBtn" disabled>Previous</button>
+                <span id="pageNumber">Page 1</span>
+                <button id="nextBtn" disabled>Next</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>PhishGuard AI — Detect. Analyze. Stay Secure.</p>
+        <p>© 2026 PhishGuard AI. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

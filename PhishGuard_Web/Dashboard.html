@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | PhishGuard AI</title>
+    <link rel="website icon" href="images/PhishGuard AI logo.png" type="image/png">
+    <link rel="stylesheet" href="css/Dashboard.css">
+    <script type="module" src="js/Dashboard.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="h1">PhishGuard AI</div>
+        <nav>
+            <a href="HomePage.html">Home</a>
+            <a href="UrlScan.html">URL Scan</a>
+            <a href="QrScan.html">QR Scan</a>
+            <a href="DnsAnalysis.html">Dns Analysis</a>
+            <a href="ScanHistory.html">History</a>
+            <button class="logout-btn" id="logoutBtn">Sign Out</button>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="welcome">
+            <h1>Welcome to PhishGuard AI</h1>
+            <p>Detect suspicious links, analyze website security, and stay protected from phishing threats.</p>
+            <p class="user-email" id="userEmail">Checking your account...</p>
+        </section>
+        <br>
+
+        <h2 class="section-title">Your Scan Overview</h2>
+        <section class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Scans</h3>
+                <div class="number" id="totalScans">—</div>
+            </div>
+            <div class="stat-card phishing">
+                <h3>Phishing Detections</h3>
+                <div class="number" id="phishingScans">—</div>
+            </div>
+
+            <div class="stat-card legitimate">
+                <h3>Legitimate Detections</h3>
+                <div class="number" id="legitimateScans">—</div>
+            </div>
+
+        </section>
+
+        <h2 class="section-title">Security Tools</h2>
+        <section class="quick-grid">
+            <a class="quick-card" href="UrlScan.html">
+                <div class="symbol">🔗</div>
+                <h3>URL Scanner</h3>
+                <p>Check URLs using the machine learning phishing detection model.</p>
+            </a>
+
+            <a class="quick-card" href="QrScan.html">
+                <div class="symbol">📷</div>
+                <h3>QR Scanner</h3>
+                <p>Upload a QR code image and inspect its decoded content.</p>
+            </a>
+
+            <a class="quick-card" href="DnsAnalysis.html">
+                <div class="symbol">🌐</div>
+                <h3>DNS Analysis</h3>
+                <p>Inspect domain DNS records and supporting security indicators.</p>
+            </a>
+
+            <a class="quick-card" href="ScanHistory.html">
+                <div class="symbol">📊</div>
+                <h3>Scan History</h3>
+                <p>Review your previous URL scans and their results.</p>
+            </a>
+        </section>
+
+        <h2 class="section-title">Recent URL Scans</h2>
+        <section class="history-box">
+            <div id="historyMessage" class="message">Loading recent scans...</div>
+            <table id="historyTable" hidden>
+                <thead>
+                    <tr>
+                        <th>URL</th>
+                        <th>Result</th>
+                        <th>Confidence</th>
+                        <th>Date</th>
+                <tbody id="historyBody"></tbody>
+                </tr>
+                </thead>
+            </table>
+            <a class="view-all" href="ScanHistory.html">View Complete Scan History →</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>PhishGuard AI — Detect. Analyze. Stay Secure.</p>
+        <p>© 2026 PhishGuard AI. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

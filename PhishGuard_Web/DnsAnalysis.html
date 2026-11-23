@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS Analysis | PhishGuard AI</title>
+    <link rel="website icon" href="images/PhishGuard AI logo.png" type="image/png">
+    <link rel="stylesheet" href="css/DnsAnalysis.css">
+    <script type="module" src="js/DnsAnalysis.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="brand">PhishGuard AI</h1>
+        <nav>
+            <a href="Dashboard.html">Dashboard</a>
+            <a href="UrlScan.html">URL Scanner</a>
+            <a href="QrScan.html">QR Scanner</a>
+            <a href="ScanHistory.html">Scan History</a>
+            <a href="HomePage.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="heading">
+            <h1>DNS Analysis</h1>
+            <p>
+                Examine DNS records and supporting domain indicators
+                to better understand a website's domain configuration.
+            </p>
+            <p><strong>Detect. Analyze. Stay Secure.</strong></p>
+        </section>
+
+        <section class="panel">
+            <h2>Analyze Domain</h2>
+
+            <form id="dnsForm">
+                <label for="urlInput">Enter Website URL or Domain</label>
+
+                <input type="text" id="urlInput" name="url" placeholder="Example: https://example.com" maxlength="2048"
+                    autocomplete="url" required>
+
+                <p class="hint">
+                    Enter a domain name or an HTTP/HTTPS URL.
+                    The DNS analyzer checks A, AAAA, MX, NS and TXT records.
+                </p>
+
+                <center><button type="submit" id="analyzeBtn">Analyze DNS</button></center>
+            </form>
+
+            <div id="formStatus" class="status" role="status" aria-live="polite"></div>
+        </section>
+
+        <section id="resultsSection" hidden>
+
+            <section class="panel">
+                <h2>Analysis Summary</h2>
+
+                <div class="summary">
+                    <div class="summary-card">
+                        <span>Hostname</span>
+                        <strong id="hostnameValue">—</strong>
+                    </div>
+
+                    <div class="summary-card">
+                        <span>Input URL</span>
+                        <strong id="inputValue">—</strong>
+                    </div>
+
+                    <div class="summary-card">
+                        <span>Scheme</span>
+                        <strong id="schemeValue">—</strong>
+                    </div>
+
+                    <div class="summary-card">
+                        <span>IP Address Input</span>
+                        <strong id="ipValue">—</strong>
+                    </div>
+
+                    <div class="summary-card">
+                        <span>Analysis Time (UTC)</span>
+                        <strong id="timeValue">—</strong>
+                    </div>
+                </div>
+
+                <p id="analysisMessage" class="hint"></p>
+            </section>
+
+            <section class="panel">
+                <h2>DNS Records</h2>
+                <div id="recordsContainer" class="record-grid"></div>
+            </section>
+
+            <section class="panel">
+                <h2>Security Indicators</h2>
+                <div id="indicatorsContainer"></div>
+
+                <p class="disclaimer">
+                    DNS records are supporting evidence only. The presence or
+                    absence of DNS records does not independently establish
+                    whether a website is legitimate or phishing.
+                </p>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>PhishGuard AI — Detect. Analyze. Stay Secure.</p>
+        <p>© 2026 PhishGuard AI. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

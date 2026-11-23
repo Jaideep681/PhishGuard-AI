@@ -1,0 +1,41 @@
+(venv_linux) jaideep@LAPTOP-MPGHHL52:/mnt/c/Users/Jaideep/Desktop/YMCA COLLEGE BCA/MINOR PROJECT/PhishGuard AI$ ls
+Data  Flask_App  Notebooks  PhishGuard_Web  Phish_Trained_Model  phiusiil+phishing+url+dataset  requirements.txt  .gitignore
+(venv_linux) jaideep@LAPTOP-MPGHHL52:/mnt/c/Users/Jaideep/Desktop/YMCA COLLEGE BCA/MINOR PROJECT/PhishGuard AI$ ls Data
+Create_scan_history_table.sql                  four_feature_extractor.py    six_feature_extractor.py
+Credentials.env                                generate_qr.py               test_env.py
+Exact_training_features_from_pkl.py            google.png                   test_model_input_preparation.py
+MySQL_Connect_and_load_dataset_with_Python.py  inspect_pipeline.py          test_scan_analysis.py
+QRCode_Detector.py                             master_feature_extractor.py  test_stage1.py
+README.txt                                     model_input_preparation.py   test_stage2.py
+__pycache__                                    one_feature_extractor.py     test_stage3.py
+audit_test_utils.py                            pg.png                       test_stage4.py
+dns_analysis.py                                prediction.py                test_stage5.py
+download.jpeg                                  qrcode_chatgpt.png           test_stage6.py
+eight_feature_extractor.py                     reference_data_extractor.py  test_stage7.py
+example.png                                    scan_analysis.py             test_stage8.py
+exampleftp.png                                 scan_service.py              three_feature_extractor.py
+feature_audit.py                               scan_service_analysis.py     train_model.py
+five_feature_extractor.py                      seven_feature_extractor.py   two_feature_extractor.py
+(venv_linux) jaideep@LAPTOP-MPGHHL52:/mnt/c/Users/Jaideep/Desktop/YMCA COLLEGE BCA/MINOR PROJECT/PhishGuard AI$ ls Flask_App
+PhishGuard_AI_FireBase_Authentication.md   phishguard-ai-2ba75-firebase-adminsdk-fbsvc-bc54c13171.json  test_scan_statistics.ps1
+PhishGuard_AI_FireBase_Authentication.txt  start_backend.ps1                                            validate.ps1
+__pycache__                                test_api.ps1                                                 venv
+app.py                                     test_dns_analysis.ps1                                        venv_linux
+check.ps1                                  test_qr_scan.ps1
+firebase_login.ps1                         test_scan_history.ps1
+(venv_linux) jaideep@LAPTOP-MPGHHL52:/mnt/c/Users/Jaideep/Desktop/YMCA COLLEGE BCA/MINOR PROJECT/PhishGuard AI$ ls Notebooks
+Analysis.ipynb
+(venv_linux) jaideep@LAPTOP-MPGHHL52:/mnt/c/Users/Jaideep/Desktop/YMCA COLLEGE BCA/MINOR PROJECT/PhishGuard AI$ ls PhishGuard_Web
+About.html    Dashboard.html    HomePage.html    QrScan.html       UrlScan.html  images
+Contact.html  DnsAnalysis.html  PhishLogin.html  ScanHistory.html  css           js
+(venv_linux) jaideep@LAPTOP-MPGHHL52:/mnt/c/Users/Jaideep/Desktop/YMCA COLLEGE BCA/MINOR PROJECT/PhishGuard AI$ ls PhishGuard_Web/images
+ 'PhishGuard AI Website.png'   'PhishGuard AI logo.png'   google-icon.png   offers.png   stay.png   tech.png   works.png
+(venv_linux) jaideep@LAPTOP-MPGHHL52:/mnt/c/Users/Jaideep/Desktop/YMCA COLLEGE BCA/MINOR PROJECT/PhishGuard AI$ ls PhishGuard_Web/css
+About.css  Contact.css  Dashboard.css  DnsAnalysis.css  HomePage.css  PhishLogin.css  QrScan.css  ScanHistory.css  UrlScan.css
+(venv_linux) jaideep@LAPTOP-MPGHHL52:/mnt/c/Users/Jaideep/Desktop/YMCA COLLEGE BCA/MINOR PROJECT/PhishGuard AI$ ls PhishGuard_Web/js
+Contact.js  Dashboard.js  DnsAnalysis.js  Homepage.js  PhishLogin.js  QrScan.js  ScanHistory.js  UrlScan.js  firebase.js
+(venv_linux) jaideep@LAPTOP-MPGHHL52:/mnt/c/Users/Jaideep/Desktop/YMCA COLLEGE BCA/MINOR PROJECT/PhishGuard AI$ ls Phish_Trained_Model
+phishing_model.pkl
+(venv_linux) jaideep@LAPTOP-MPGHHL52:/mnt/c/Users/Jaideep/Desktop/YMCA COLLEGE BCA/MINOR PROJECT/PhishGuard AI$ ls phiusiil+phishin
+g+url+dataset
+PhiUSIIL_Phishing_URL_Dataset.csv
