@@ -1,5 +1,5 @@
 (venv_linux) jaideep@LAPTOP-MPGHHL52:/mnt/c/Users/Jaideep/Desktop/YMCA COLLEGE BCA/MINOR PROJECT/PhishGuard AI$ ls
-Data  Flask_App  Notebooks  PhishGuard_Web  Phish_Trained_Model  phiusiil+phishing+url+dataset  requirements.txt  .gitignore
+Data  Flask_App  Notebooks  PhishGuard_Web  Phish_Trained_Model  phiusiil+phishing+url+dataset  .gitignore
 (venv_linux) jaideep@LAPTOP-MPGHHL52:/mnt/c/Users/Jaideep/Desktop/YMCA COLLEGE BCA/MINOR PROJECT/PhishGuard AI$ ls Data
 Create_scan_history_table.sql                  four_feature_extractor.py    six_feature_extractor.py
 Credentials.env                                generate_qr.py               test_env.py
@@ -17,11 +17,11 @@ exampleftp.png                                 scan_service.py              thre
 feature_audit.py                               scan_service_analysis.py     train_model.py
 five_feature_extractor.py                      seven_feature_extractor.py   two_feature_extractor.py
 (venv_linux) jaideep@LAPTOP-MPGHHL52:/mnt/c/Users/Jaideep/Desktop/YMCA COLLEGE BCA/MINOR PROJECT/PhishGuard AI$ ls Flask_App
-PhishGuard_AI_FireBase_Authentication.md   phishguard-ai-2ba75-firebase-adminsdk-fbsvc-bc54c13171.json  test_scan_statistics.ps1
-PhishGuard_AI_FireBase_Authentication.txt  start_backend.ps1                                            validate.ps1
+phishguard-ai-2ba75-firebase-adminsdk.json  test_scan_statistics.ps1
+start_backend.ps1                          validate.ps1
 __pycache__                                test_api.ps1                                                 venv
 app.py                                     test_dns_analysis.ps1                                        venv_linux
-check.ps1                                  test_qr_scan.ps1
+check.ps1                                  test_qr_scan.ps1						requirements.txt
 firebase_login.ps1                         test_scan_history.ps1
 (venv_linux) jaideep@LAPTOP-MPGHHL52:/mnt/c/Users/Jaideep/Desktop/YMCA COLLEGE BCA/MINOR PROJECT/PhishGuard AI$ ls Notebooks
 Analysis.ipynb

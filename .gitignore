@@ -1,6 +1,7 @@
 
 # Firebase Admin SDK private credentials
 Flask_App/phishguard-ai-2ba75-firebase-adminsdk-fbsvc-bc54c13171.json
+**/*firebase-adminsdk*.json
 
 # Environment variables and secrets
 .env
@@ -28,3 +29,12 @@ Thumbs.db
 
 # Large original training dataset
 phiusiil+phishing+url+dataset/
+
+# Temporary files
+uploads/
+temp/
+*.log
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/

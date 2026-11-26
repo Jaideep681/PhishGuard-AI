@@ -26,16 +26,19 @@ load_dotenv(ENV_FILE, override=False)
 if str(DATA_DIR) not in sys.path:
     sys.path.insert(0, str(DATA_DIR))
 
-# Firebase Admin SDK credentials
-# Local development uses the existing JSON file.
-# Production can provide a different path through FIREBASE_CREDENTIALS.
-FIREBASE_KEY_PATH = Path(
-    os.getenv(
-        "FIREBASE_SERVICE_ACCOUNT_PATH",
-        str(FLASK_DIR / "phishguard-ai-2ba75-firebase-adminsdk-fbsvc-bc54c13171.json")
-    )
-).expanduser()
+""" FIREBASE ADMIN SDK CREDENTIALS
+ Local development uses the existing JSON file.
+ Production can provide a different path through FIREBASE_CREDENTIALS."""
+firebase_key_value = os.getenv(
+    "FIREBASE_SERVICE_ACCOUNT_PATH",
+    "phishguard-ai-2ba75-firebase-adminsdk-fbsvc-bc54c13171.json"
+)
 
+FIREBASE_KEY_PATH = Path(firebase_key_value).expanduser()
+
+# Resolve relative paths from Flask_App.
+if not FIREBASE_KEY_PATH.is_absolute():
+    FIREBASE_KEY_PATH = FLASK_DIR / FIREBASE_KEY_PATH
 
 # FLASK CONFIGURATION
 app = Flask(__name__)
@@ -52,7 +55,8 @@ CORS(
                 frontend_origin,
                 "http://localhost:5500",
                 "http://127.0.0.1:5500",
-                "https://your-project.vercel.app"
+                "https://your-project.vercel.app",
+                "https://fkjqlc5w-5500.inc1.devtunnels.ms/"
             ]
         }
     },
@@ -423,10 +427,8 @@ def contact_message():
         }), 502
 
 # RUN APPLICATION
-
-# RUN APPLICATION
 if __name__ == "__main__":
-    host = os.getenv("HOST", "127.0.0.1")
+    host = os.getenv("HOST", "0.0.0.0")
     port = int(os.getenv("PORT", "5000"))
     app.run(
         host=host,

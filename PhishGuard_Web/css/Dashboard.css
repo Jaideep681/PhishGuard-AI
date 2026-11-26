@@ -38,13 +38,14 @@ header {
     background: #0f172a;
     top: 0;
     color: white;
-    position: fixed;
+    position: sticky;
     padding: 17px 6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
+    z-index: 1000%;
 }
 
 header .h1 {
@@ -282,7 +283,7 @@ footer {
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 650px) {
     header {
         padding: 17px 5%;
     }
@@ -292,6 +293,7 @@ footer {
     }
 
     .container {
+        margin-top: 25px;
         width: 92%;
     }
 
