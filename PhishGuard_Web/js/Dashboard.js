@@ -1,5 +1,5 @@
 import { auth, waitForAuth } from "./firebase.js";
-const API_BASE_URL = "";
+const API_BASE = "http://127.0.0.1:5000";
 const userEmail = document.getElementById("userEmail");
 const historyMessage = document.getElementById("historyMessage");
 
@@ -21,7 +21,7 @@ async function getAuthToken() {
 async function apiRequest(endpoint) {
     const token = await getAuthToken();
 
-    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+    const response = await fetch(`${API_BASE}${endpoint}`, {
         method: "GET",
         headers: {
             "Authorization": `Bearer ${token}`,

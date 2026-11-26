@@ -1,4 +1,4 @@
-const API_BASE_URL = "";
+const API_BASE = "http://127.0.0.1:5000";  
 /* 
 * After Vercel deployment change this url to "https://phishguard-ai.onrender.com"
 */
@@ -18,7 +18,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
     button.textContent = "Sending...";
     status.textContent = "";
     try {
-        const response = await fetch(`${API_BASE_URL}/api/contact`, {
+        const response = await fetch(`${API_BASE}/api/contact`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

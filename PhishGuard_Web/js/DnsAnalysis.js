@@ -1,6 +1,6 @@
 import { waitForAuth } from "./firebase.js";
 // Flask backend address.
-const API_BASE_URL = "";
+const API_BASE_URL = "http://127.0.0.1:5000";
 const dnsForm = document.getElementById("dnsForm");
 const urlInput = document.getElementById("urlInput");
 const analyzeBtn = document.getElementById("analyzeBtn");
